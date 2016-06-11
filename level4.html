@@ -1,0 +1,22 @@
+<h5>第 4 关 识别</h5>
+<p> 为了防止恶魔闯关，阿qiｕ工匠太机智了</p>
+<p> 这一关要求你上传一张个人相片，通过阿qiu工匠设计的软件识别才能通过，注意：恶魔应该是很丑陋的人</p>
+
+
+<script type="text/javascript">
+	function check_pic() {
+		var cnt = document.getElementById("Hidden").value++;
+		if (cnt == 0)
+			alert("太黑了，不行。。。换一个！");
+		else {
+			alert("封印解除，前往获取love...");
+			window.location.href='http://qiuweicheng.com';
+		}
+	}
+</script>
+
+	<input type="file">
+	<input type="hidden" value="0" id = "Hidden">
+<button onclick="check_pic();">提交</button>
+
+

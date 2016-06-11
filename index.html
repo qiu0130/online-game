@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta charset="utf-8">	
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,minimal-ui">
+
+<title>欠欠游戏</title>
+<link rel="stylesheet" href="lib/material.min.css">
+<script src="lib/material.min.js" ></script>
+<script src="lib/jquery.min.js" ></script>
+
+<link rel="stylesheet" href="css/index.css" >
+<link rel="stylesheet" href="css/levels.css" >
+
+
+<script src="js/levels.js"></script>
+</head>
+
+<body onload="loadLevel(0);">
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs" >
+  <header class="mdl-layout__header header-tabs">
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+	  <a href="#tab-puzzle" class="mdl-layout__tab is-active">我要玩游戏</a>
+      <!--<a href="#tab-notes" class="mdl-layout__tab">笔记</a>-->
+	  <!--<a href="#tab-help" class="mdl-layout__tab">提示</a>-->
+    </div>
+	
+
+  </header>
+  <main class="mdl-layout__content">
+
+	<section class="mdl-layout__tab-panel is-active" id="tab-puzzle">
+      <div class="page-content">
+		<h5><div id="navIcons">
+			<div class="wrapper"><div onclick="loadLevel(0)"><img src="img/home.png" /></div></div>
+			<!--<div class="wrapper"><div class="btnPrev" onclick="navPrev();"><img src="img/previous.png" /></div></div>-->
+			<!--<div class="wrapper"><div class="btnNext" onclick="navNext();"><img src="img/next.png" /></div></div>-->
+		</div></h5>
+		<div id="levelHTML"></div>
+	  </div>
+    </section>
+	
+	  
+	
+	
+	<!--<section class="mdl-layout__tab-panel" id="tab-help">-->
+      <!--<div class="page-content">-->
+		<!--<div id="help-wrapper"></div>-->
+	  <!--</div>-->
+    <!--</section>-->
+	<!-- -->
+	<!--<section class="mdl-layout__tab-panel" id="tab-notes">-->
+      <!--<div class="page-content">-->
+		<!--<div id="user-note-holder" class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">-->
+		  <!--<textarea onchange="storeNotes();" onkeyup="storeNotes();"class="mdl-textfield__input" type="text" rows="10" maxrows="10" id="user-note"></textarea>-->
+		  <!--<label class="mdl-textfield__label" for="user-note">您可以在这里记录笔记……</label>-->
+		<!--</div>-->
+		<!--<div>-->
+			<!--<button onclick="clearNotes();" class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-button&#45;&#45;colored">清除</button>-->
+		<!--</div>-->
+	  <!--</div>-->
+    <!--</section>-->
+	
+  </main>
+</div>
+
+
+</body>
+</html>

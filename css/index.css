@@ -1,0 +1,19 @@
+div.page-content{
+	margin: 10 10 10 10;
+}
+header.header-tabs{
+	min-height:0px;
+}
+body {
+    background: #F3E5F5;
+}
+div.help-content{
+display:none;
+
+border: solid purple 2px;
+    padding: 10;
+    margin: 10 0 10 0;
+}
+section.mdl-layout__tab-panel {
+display:none;
+}
